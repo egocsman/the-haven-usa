@@ -1,0 +1,338 @@
+/* RESET & GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #e5e5e5;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 6%;
+    background-color: #0b0b0b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.logo {
+    color: #d4af37;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #d4af37;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg.png') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-subtitle {
+    color: #d4af37;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+
+.hero-cta-text {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-concept {
+    background-color: rgba(26, 26, 26, 0.8);
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-concept:hover {
+    background-color: #d4af37;
+    color: #0b0b0b;
+    transform: translateY(-3px);
+}
+
+/* MENU CARDS SECTION */
+.menu-section {
+    padding: 80px 6%;
+    background-color: #0b0b0b;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: #141414;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 10px;
+    width: 48%;
+    min-width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+}
+
+.burger-img {
+    background-image: url('images/burger-card.png');
+}
+
+.dessert-img {
+    background-image: url('images/dessert-card.png');
+}
+
+.card-action {
+    padding: 25px;
+    text-align: left;
+}
+
+.explore-btn {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+}
+
+.explore-btn:hover {
+    opacity: 0.7;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    display: flex;
+    background-color: #111111;
+    min-height: 450px;
+}
+
+.about-text-col {
+    flex: 1;
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-tag {
+    color: #d4af37;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-text-col h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.about-text-col p {
+    color: #aaaaaa;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.about-img-col {
+    flex: 1;
+    background: url('images/about-store.png') center/cover no-repeat;
+    min-height: 350px;
+}
+
+/* FEATURES BAR */
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 5%;
+    background-color: #0b0b0b;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-item {
+    max-width: 220px;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 0.8rem;
+    color: #888888;
+    line-height: 1.5;
+}
+
+/* LOCATION SECTION */
+.location-section {
+    display: flex;
+    background-color: #0b0b0b;
+    min-height: 450px;
+}
+
+.location-info {
+    flex: 1;
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-info h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.address, .hours {
+    color: #aaaaaa;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-directions {
+    display: inline-block;
+    background-color: #c29b38;
+    color: #0b0b0b;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width: fit-content;
+    transition: background 0.3s;
+}
+
+.btn-directions:hover {
+    background-color: #d4af37;
+}
+
+.map-box {
+    flex: 1.2;
+    min-height: 400px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #070707;
+    padding: 60px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-logo-circle {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    text-align: center;
+    color: #d4af37;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.footer-col p {
+    color: #888888;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
