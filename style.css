@@ -352,3 +352,32 @@ body {
 section {
     padding: 80px 20px; /* 80px arriba y abajo, 20px a los lados para celulares */
 }
+
+.contact-socials {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-socials .social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el icono de Instagram y el texto */
+    text-decoration: none;
+    color: #ffffff; /* Color del texto (blanco) */
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.contact-socials .social-item:hover {
+    opacity: 0.8; /* Pequeño efecto al pasar el mouse por encima */
+}
+
+.contact-socials .social-icon {
+    width: 24px;  /* Ancho del icono */
+    height: 24px; /* Alto del icono */
+    object-fit: contain;
+}
