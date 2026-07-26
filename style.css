@@ -395,3 +395,12 @@ section {
 .visit-section a {
     border-bottom: 2px solid #B18E54 !important;
 }
+/* Forzar el color dorado en el texto superior */
+.find-us, span, h4 {
+    color: #B18E54 !important;
+}
+
+/* Forzar la línea dorada en cualquier enlace o botón de esa sección */
+a, .btn, .directions-link {
+    border-color: #B18E54 !important;
+}
