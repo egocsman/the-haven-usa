@@ -381,3 +381,6 @@ section {
     height: 24px; /* Alto del icono */
     object-fit: contain;
 }
+.footer h4 {
+    color: #B18E54 !important;
+}
