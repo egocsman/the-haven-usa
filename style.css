@@ -350,5 +350,5 @@ body {
 
 /* Espaciado uniforme para todas las secciones de la landing */
 section {
-    padding: 50px 20px; /* 80px arriba y abajo, 20px a los lados para celulares */
+    padding: 80px 20px; /* 80px arriba y abajo, 20px a los lados para celulares */
 }
