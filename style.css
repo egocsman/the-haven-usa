@@ -347,3 +347,8 @@ body {
     .about-text-col, .location-info { padding: 40px 20px; }
     .about-img-col { min-height: 300px; }
 }
+
+/* Espaciado uniforme para todas las secciones de la landing */
+section {
+    padding: 80px 20px; /* 80px arriba y abajo, 20px a los lados para celulares */
+}
