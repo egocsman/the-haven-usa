@@ -290,6 +290,12 @@ body {
     min-height: 350px;
 }
 
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    filter: invert(90%) hue-rotate(180deg) contrast(120%);
+}
+
 /* FOOTER */
 .footer {
     background-color: #080808;
