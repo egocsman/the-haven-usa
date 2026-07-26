@@ -384,3 +384,14 @@ section {
 .footer h4 {
     color: #B18E54 !important;
 }
+/* 1. Para cambiar el texto pequeño de arriba (como "FIND US") a dorado */
+.find-us span, 
+.section-subtitle {
+    color: #B18E54 !important;
+}
+
+/* 2. Para ponerle la línea dorada a "GET DIRECTIONS" */
+.get-directions, 
+.visit-section a {
+    border-bottom: 2px solid #B18E54 !important;
+}
