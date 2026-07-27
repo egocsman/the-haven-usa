@@ -427,3 +427,10 @@ section.features-section .feature-item h4 {
 .find-us {
     color: #B18E54 !important;
 }
+/* Devolver el color dorado a Find Us y Our Story */
+.find-us,
+.our-story,
+.section-subtitle,
+.hero-subtitle {
+    color: #B18E54 !important;
+}
