@@ -449,3 +449,10 @@ section.features-section .feature-item h4 {
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg-mobile') no-repeat center center/cover;
     }
 }
+/* Ajuste exclusivo para que welcome-title.png se vea más pequeño en móviles */
+@media (max-width: 768px) {
+    .hero-title-img {
+        max-width: 280px !important; /* Puedes cambiar 280px por 240px si lo quieres aún más chico */
+        width: 80% !important;
+    }
+}
