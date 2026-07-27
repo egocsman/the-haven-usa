@@ -440,22 +440,21 @@ section.features-section .feature-item h4 {
 }
 /* Imagen de fondo del Hero para pantallas grandes (Computadora) por defecto */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('images/hero-bg.png') no-repeat center center/cover;
 }
-
 /* ==========================================
    DIAGRAMACIÓN HERO PARA MÓVILES (Definitivo)
    ========================================== */
 @media (max-width: 768px) {
     
-    /* 1. Fondo vertical y distribución, con espacio superior para el header */
+    /* 1. Fondo vertical con degradado claro (0.3 y 0.4) y distribución superior */
     .hero {
         height: 100vh !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
         align-items: center !important;
-        padding: 95px 20px 40px 20px !important; 
+        padding: 75px 20px 40px 20px !important; 
         box-sizing: border-box !important;
         background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('images/hero-bg-mobile.jpg') no-repeat center center/cover !important;
     }
@@ -470,18 +469,18 @@ section.features-section .feature-item h4 {
         order: 1 !important;
     }
 
-    /* 3. Título Welcome en PNG tamaño adaptado */
+    /* 3. Título Welcome en PNG más arriba */
     .hero-title-container {
-        margin: 5px 0 0 0 !important;
+        margin: 2px 0 0 0 !important;
         order: 2 !important;
     }
 
     .hero-title-img {
-        max-width: 260px !important;
+        max-width: 250px !important;
         width: 100% !important;
     }
 
-    /* 4. Texto "Choose your favorite experience" visible arriba de los botones */
+    /* 4. Texto "Choose your favorite experience" */
     .hero-cta-text {
         display: block !important;
         text-align: center !important;
@@ -492,7 +491,7 @@ section.features-section .feature-item h4 {
         order: 3 !important;
     }
 
-    /* 5. Botones abajo con ancho estilizado y diseño original */
+    /* 5. Botones abajo con ancho angosto y diseño original */
     .hero-buttons {
         width: 100% !important;
         display: flex !important;
@@ -504,14 +503,15 @@ section.features-section .feature-item h4 {
     }
 
     .hero-buttons .btn-concept {
-        width: 85% !important;
-        max-width: 320px !important;
+        width: 65% !important;
+        max-width: 240px !important;
         text-align: center !important;
         background-color: transparent !important;
         border: 2px solid #ffffff !important;
         color: #ffffff !important;
         border-radius: 35px !important;
-        padding: 12px 20px !important;
+        padding: 10px 15px !important;
         box-sizing: border-box !important;
     }
 }
+
