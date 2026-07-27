@@ -448,14 +448,14 @@ section.features-section .feature-item h4 {
    ========================================== */
 @media (max-width: 768px) {
     
-    /* 1. Fondo vertical y distribución de elementos a los extremos */
+    /* 1. Fondo vertical y distribución, con espacio superior para el header */
     .hero {
         height: 100vh !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
         align-items: center !important;
-        padding: 30px 20px 40px 20px !important;
+        padding: 95px 20px 40px 20px !important; 
         box-sizing: border-box !important;
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg-mobile.jpg') no-repeat center center/cover !important;
     }
@@ -481,28 +481,37 @@ section.features-section .feature-item h4 {
         width: 100% !important;
     }
 
-    /* 4. Ocultar texto del medio para dejar la imagen libre */
+    /* 4. Texto "Choose your favorite experience" visible arriba de los botones */
     .hero-cta-text {
-        display: none !important;
+        display: block !important;
+        text-align: center !important;
+        font-size: 0.85rem !important;
+        letter-spacing: 1.5px !important;
+        color: #ffffff !important;
+        margin-bottom: 8px !important;
+        order: 3 !important;
     }
 
-    /* 5. Botones abajo con diseño original */
+    /* 5. Botones abajo con ancho estilizado y diseño original */
     .hero-buttons {
         width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
         gap: 12px !important;
-        order: 3 !important;
+        order: 4 !important;
         margin-bottom: 10px !important;
     }
 
     .hero-buttons .btn-concept {
-        width: 100% !important;
+        width: 85% !important;
+        max-width: 320px !important;
         text-align: center !important;
         background-color: transparent !important;
         border: 2px solid #ffffff !important;
         color: #ffffff !important;
         border-radius: 35px !important;
         padding: 12px 20px !important;
+        box-sizing: border-box !important;
     }
 }
