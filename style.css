@@ -463,3 +463,11 @@ section.features-section .feature-item h4 {
         justify-content: flex-start !important; /* Alinea los elementos desde arriba en lugar del centro exacto */
     }
 }
+/* Poner TWO CONCEPTS y ONE PASSION uno debajo del otro en móviles */
+@media (max-width: 768px) {
+    .hero-subtitle {
+        display: block !important;
+        line-height: 1.4 !important; /* Espacio elegante entre las dos líneas */
+        letter-spacing: 2px !important; /* Ajuste opcional para que no se extienda de más en pantallas chicas */
+    }
+}
