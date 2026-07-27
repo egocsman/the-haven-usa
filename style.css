@@ -396,7 +396,7 @@ section {
     border-bottom: 2px solid #B18E54 !important;
 }
 /* Forzar el color dorado en el texto superior */
-.find-us, span, h4 {
+.find-us, span, {
     color: #B18E54 !important;
 }
 
