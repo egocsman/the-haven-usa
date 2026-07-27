@@ -408,19 +408,7 @@ a, .btn, .directions-link {
 .hero-subtitle {
     color: #B18E54 !important;
 }
-
-/* 2. Bordes redondeados para los botones de "Choose your favorite experience" */
-.experience-btn, 
-.hero-btn, 
-.btn {
-    border-radius: 30px !important; 
-}
-/* Forzar bordes redondeados en cualquier botón o enlace con estilo de botón */
-a.btn, 
-button, 
-.btn, 
-.experience-btn, 
-.menu-btn {
-    border-radius: 35px !important; /* Hazlo más grande por si acaso */
-    overflow: hidden !important;    /* Evita que el contenido interior se salga de las esquinas */
+/* Bordes redondeados para los botones de HAVEN BURGERS y HAVEN DESSERTS */
+a.btn-concept {
+    border-radius: 35px !important;
 }
