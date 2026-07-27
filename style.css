@@ -1,4 +1,6 @@
-/* ESTILOS GENERALES */
+/* ==========================================
+   1. ESTILOS GENERALES Y RESET
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,14 @@ body {
     overflow-x: hidden;
 }
 
-/* HEADER */
+/* Espaciado uniforme para todas las secciones */
+section {
+    padding: 80px 20px;
+}
+
+/* ==========================================
+   2. HEADER
+   ========================================== */
 .header {
     position: fixed;
     top: 0;
@@ -42,11 +51,17 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav a:hover {
-    color: #d4af37;
+/* Hover del menú del header en dorado exacto (#B18E54) */
+.header a:hover, 
+.navbar a:hover, 
+nav a:hover, 
+.nav-links a:hover {
+    color: #B18E54 !important;
 }
 
-/* HERO SECTION */
+/* ==========================================
+   3. HERO SECTION
+   ========================================== */
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg.png') no-repeat center center/cover;
@@ -61,12 +76,11 @@ body {
 .hero-subtitle {
     font-size: 1rem;
     letter-spacing: 4px;
-    color: #d4af37;
+    color: #B18E54 !important;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-/* Contenedor y efecto para el título en imagen PNG */
 .hero-title-container {
     display: flex;
     justify-content: center;
@@ -105,6 +119,7 @@ body {
     justify-content: center;
 }
 
+/* Botones principales con bordes redondeados */
 .btn-concept {
     background-color: transparent;
     border: 2px solid #ffffff;
@@ -114,6 +129,7 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    border-radius: 20px !important;
 }
 
 .btn-concept:hover {
@@ -121,7 +137,9 @@ body {
     color: #0f0f0f;
 }
 
-/* CARDS SECTION */
+/* ==========================================
+   4. CARDS SECTION (MENU)
+   ========================================== */
 .menu-section {
     padding: 80px 50px;
     background-color: #141414;
@@ -169,10 +187,12 @@ body {
 
 .explore-btn:hover {
     transform: translateX(5px);
-    color: #d4af37;
+    color: #B18E54;
 }
 
-/* ABOUT SECTION */
+/* ==========================================
+   5. ABOUT SECTION
+   ========================================== */
 .about-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -188,7 +208,7 @@ body {
 }
 
 .section-tag {
-    color: #d4af37;
+    color: #B18E54;
     font-size: 0.85rem;
     letter-spacing: 3px;
     font-weight: 600;
@@ -210,7 +230,9 @@ body {
     background: url('images/about-store.png') center/cover;
 }
 
-/* FEATURES BAR */
+/* ==========================================
+   6. FEATURES BAR (Iconos con títulos blancos)
+   ========================================== */
 .features-section {
     padding: 50px 50px;
     background-color: #181818;
@@ -235,10 +257,12 @@ body {
     margin-bottom: 20px;
 }
 
-.feature-item h4 {
+/* Forzar los títulos h4 de los iconos en BLANCO de forma estricta */
+section.features-section .feature-item h4 {
     font-size: 1rem;
     margin-bottom: 10px;
     letter-spacing: 1px;
+    color: #ffffff !important;
 }
 
 .feature-item p {
@@ -247,7 +271,9 @@ body {
     line-height: 1.5;
 }
 
-/* LOCATION SECTION */
+/* ==========================================
+   7. LOCATION SECTION
+   ========================================== */
 .location-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -273,14 +299,14 @@ body {
     font-size: 0.95rem;
 }
 
-.map-btn {
+.map-btn, .get-directions, .visit-section a {
     display: inline-block;
     margin-top: 20px;
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    border-bottom: 2px solid #d4af37;
+    border-bottom: 2px solid #B18E54 !important;
     padding-bottom: 5px;
     width: fit-content;
 }
@@ -296,7 +322,9 @@ body {
     filter: invert(90%) hue-rotate(180deg) contrast(120%);
 }
 
-/* FOOTER */
+/* ==========================================
+   8. FOOTER Y REDES SOCIALES
+   ========================================== */
 .footer {
     background-color: #080808;
     padding: 60px 50px 30px 50px;
@@ -319,11 +347,12 @@ body {
     flex-wrap: wrap;
 }
 
+.footer h4,
 .footer-col h4 {
     font-size: 0.9rem;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    color: #d4af37;
+    color: #B18E54 !important;
 }
 
 .footer-col p {
@@ -339,20 +368,6 @@ body {
     padding-top: 20px;
 }
 
-/* RESPONSIVE PARA MÓVILES */
-@media (max-width: 768px) {
-    .header { padding: 15px 20px; }
-    .nav { display: none; }
-    .about-section, .location-section { grid-template-columns: 1fr; }
-    .about-text-col, .location-info { padding: 40px 20px; }
-    .about-img-col { min-height: 300px; }
-}
-
-/* Espaciado uniforme para todas las secciones de la landing */
-section {
-    padding: 80px 20px; /* 80px arriba y abajo, 20px a los lados para celulares */
-}
-
 .contact-socials {
     display: flex;
     gap: 30px;
@@ -365,71 +380,41 @@ section {
 .contact-socials .social-item {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre el icono de Instagram y el texto */
+    gap: 10px;
     text-decoration: none;
-    color: #ffffff; /* Color del texto (blanco) */
+    color: #ffffff;
     font-size: 16px;
     transition: opacity 0.3s ease;
 }
 
 .contact-socials .social-item:hover {
-    opacity: 0.8; /* Pequeño efecto al pasar el mouse por encima */
+    opacity: 0.8;
 }
 
 .contact-socials .social-icon {
-    width: 24px;  /* Ancho del icono */
-    height: 24px; /* Alto del icono */
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
-.footer h4 {
-    color: #B18E54 !important;
-}
-/* 1. Para cambiar el texto pequeño de arriba (como "FIND US") a dorado */
+
+/* ==========================================
+   9. ELEMENTOS DORADOS ESPECÍFICOS (Find Us, Our Story, etc.)
+   ========================================== */
+.find-us,
+.our-story,
+.section-subtitle,
 .find-us span, 
 .section-subtitle {
     color: #B18E54 !important;
 }
 
-/* 2. Para ponerle la línea dorada a "GET DIRECTIONS" */
-.get-directions, 
-.visit-section a {
-    border-bottom: 2px solid #B18E54 !important;
-}
-/* Forzar el color dorado en el texto superior */
-.find-us, span, {
-    color: #B18E54 !important;
-}
-
-/* Forzar la línea dorada en cualquier enlace o botón de esa sección */
-a, .btn, .directions-link {
-    border-color: #B18E54 !important;
-}
-/* 1. Color dorado exacto para el subtítulo del Hero */
-.hero-subtitle {
-    color: #B18E54 !important;
-}
-/* Bordes redondeados para los botones de HAVEN BURGERS y HAVEN DESSERTS */
-a.btn-concept {
-    border-radius: 20px !important;
-}
-/* Cambiar el color al pasar el mouse (hover) en el menú del header al dorado exacto */
-.header a:hover, 
-.navbar a:hover, 
-nav a:hover, 
-.nav-links a:hover {
-    color: #B18E54 !important;
-}
-/* 1. Forzar los títulos de los iconos en BLANCO */
-section.features-section .feature-item h4 {
-    color: #ffffff !important;
-}
-
-/* 2. Forzar "Find Us", "Our Story" y otros subtítulos específicos en DORADO (#B18E54) */
-.find-us,
-.our-story,
-.section-subtitle,
-.hero-subtitle,
-h4.find-us,
-h4.our-story {
-    color: #B18E54 !important;
+/* ==========================================
+   10. RESPONSIVE PARA MÓVILES
+   ========================================== */
+@media (max-width: 768px) {
+    .header { padding: 15px 20px; }
+    .nav { display: none; }
+    .about-section, .location-section { grid-template-columns: 1fr; }
+    .about-text-col, .location-info { padding: 40px 20px; }
+    .about-img-col { min-height: 300px; }
 }
