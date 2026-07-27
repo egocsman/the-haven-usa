@@ -459,7 +459,7 @@ section.features-section .feature-item h4 {
 /* Subir el contenido del Hero en pantallas móviles */
 @media (max-width: 768px) {
     .hero {
-        padding-top: 40px !important; /* Reduce el espacio superior para que todo suba */
+        padding-top: 60px !important; /* Reduce el espacio superior para que todo suba */
         justify-content: flex-start !important; /* Alinea los elementos desde arriba en lugar del centro exacto */
     }
 }
