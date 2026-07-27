@@ -419,18 +419,17 @@ nav a:hover,
 .nav-links a:hover {
     color: #B18E54 !important;
 }
-/* Ataque directo y definitivo a los títulos de las features */
+/* 1. Forzar los títulos de los iconos en BLANCO */
 section.features-section .feature-item h4 {
     color: #ffffff !important;
 }
-/* Devolver el color dorado únicamente a .find-us */
-.find-us {
-    color: #B18E54 !important;
-}
-/* Devolver el color dorado a Find Us y Our Story */
+
+/* 2. Forzar "Find Us", "Our Story" y otros subtítulos específicos en DORADO (#B18E54) */
 .find-us,
 .our-story,
 .section-subtitle,
-.hero-subtitle {
+.hero-subtitle,
+h4.find-us,
+h4.our-story {
     color: #B18E54 !important;
 }
