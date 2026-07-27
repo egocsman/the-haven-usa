@@ -419,7 +419,7 @@ nav a:hover,
 .nav-links a:hover {
     color: #B18E54 !important;
 }
-/* Poner en blanco los títulos h4 dentro de los items de features */
-.feature-item h4 {
+/* Ataque directo y definitivo a los títulos de las features */
+section.features-section .feature-item h4 {
     color: #ffffff !important;
 }
