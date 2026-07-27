@@ -404,15 +404,14 @@ section {
 a, .btn, .directions-link {
     border-color: #B18E54 !important;
 }
-/* 1. Cambiar el texto "TWO CONCEPTS Y ONE PASSION" (o subtítulos del Hero) al dorado exacto */
-.hero-subtitle, 
-.hero p {
+/* 1. Color dorado exacto para el subtítulo del Hero */
+.hero-subtitle {
     color: #B18E54 !important;
 }
 
 /* 2. Bordes redondeados para los botones de "Choose your favorite experience" */
 .experience-btn, 
-.menu-btn, 
-.hero .btn {
-    border-radius: 30px !important; /* Cambia el número si los quieres más o menos redondeados */
+.hero-btn, 
+.btn {
+    border-radius: 30px !important; 
 }
