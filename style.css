@@ -415,3 +415,12 @@ a, .btn, .directions-link {
 .btn {
     border-radius: 30px !important; 
 }
+/* Forzar bordes redondeados en cualquier botón o enlace con estilo de botón */
+a.btn, 
+button, 
+.btn, 
+.experience-btn, 
+.menu-btn {
+    border-radius: 35px !important; /* Hazlo más grande por si acaso */
+    overflow: hidden !important;    /* Evita que el contenido interior se salga de las esquinas */
+}
