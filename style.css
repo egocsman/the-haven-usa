@@ -410,5 +410,5 @@ a, .btn, .directions-link {
 }
 /* Bordes redondeados para los botones de HAVEN BURGERS y HAVEN DESSERTS */
 a.btn-concept {
-    border-radius: 35px !important;
+    border-radius: 20px !important;
 }
