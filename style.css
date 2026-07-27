@@ -412,3 +412,10 @@ a, .btn, .directions-link {
 a.btn-concept {
     border-radius: 20px !important;
 }
+/* Cambiar el color al pasar el mouse (hover) en el menú del header al dorado exacto */
+.header a:hover, 
+.navbar a:hover, 
+nav a:hover, 
+.nav-links a:hover {
+    color: #B18E54 !important;
+}
