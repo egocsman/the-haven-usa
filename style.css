@@ -418,3 +418,23 @@ section.features-section .feature-item h4 {
     .about-text-col, .location-info { padding: 40px 20px; }
     .about-img-col { min-height: 300px; }
 }
+/* Estructura interna de las tarjetas para alinear el logo y el botón */
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Mantiene el contenido abajo */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea a la izquierda (o cámbialo a center si prefieres centrado) */
+    gap: 15px; /* Espacio entre el logo y el botón */
+}
+
+/* Tamaño y estilo para los logos SVG en las tarjetas */
+.card-logo {
+    width: 140px; /* Ajusta este valor si quieres el logo más grande o pequeño */
+    height: auto;
+    object-fit: contain;
+}
