@@ -443,31 +443,66 @@ section.features-section .feature-item h4 {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg.png') no-repeat center center/cover;
 }
 
-/* Imagen de fondo del Hero exclusiva para celulares (Móviles) */
+/* ==========================================
+   DIAGRAMACIÓN HERO PARA MÓVILES (Definitivo)
+   ========================================== */
 @media (max-width: 768px) {
+    
+    /* 1. Fondo vertical y distribución de elementos a los extremos */
     .hero {
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg-mobile.jpg') no-repeat center center/cover;
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 30px 20px 40px 20px !important;
+        box-sizing: border-box !important;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero-bg-mobile.jpg') no-repeat center center/cover !important;
     }
-}
-/* Ajuste exclusivo para que welcome-title.png se vea más pequeño en móviles */
-@media (max-width: 768px) {
-    .hero-title-img {
-        max-width: 280px !important; /* Puedes cambiar 280px por 240px si lo quieres aún más chico */
-        width: 80% !important;
-    }
-}
-/* Subir el contenido del Hero en pantallas móviles */
-@media (max-width: 768px) {
-    .hero {
-        padding-top: 60px !important; /* Reduce el espacio superior para que todo suba */
-        justify-content: flex-start !important; /* Alinea los elementos desde arriba en lugar del centro exacto */
-    }
-}
-/* Poner TWO CONCEPTS y ONE PASSION uno debajo del otro en móviles */
-@media (max-width: 768px) {
+
+    /* 2. Subtítulo en dos líneas arriba */
     .hero-subtitle {
         display: block !important;
-        line-height: 1.4 !important; /* Espacio elegante entre las dos líneas */
-        letter-spacing: 2px !important; /* Ajuste opcional para que no se extienda de más en pantallas chicas */
+        text-align: center !important;
+        line-height: 1.4 !important;
+        letter-spacing: 2px !important;
+        margin-bottom: 0 !important;
+        order: 1 !important;
+    }
+
+    /* 3. Título Welcome en PNG tamaño adaptado */
+    .hero-title-container {
+        margin: 5px 0 0 0 !important;
+        order: 2 !important;
+    }
+
+    .hero-title-img {
+        max-width: 260px !important;
+        width: 100% !important;
+    }
+
+    /* 4. Ocultar texto del medio para dejar la imagen libre */
+    .hero-cta-text {
+        display: none !important;
+    }
+
+    /* 5. Botones abajo con diseño original */
+    .hero-buttons {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        order: 3 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero-buttons .btn-concept {
+        width: 100% !important;
+        text-align: center !important;
+        background-color: transparent !important;
+        border: 2px solid #ffffff !important;
+        color: #ffffff !important;
+        border-radius: 35px !important;
+        padding: 12px 20px !important;
     }
 }
