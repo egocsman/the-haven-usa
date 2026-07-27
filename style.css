@@ -419,11 +419,13 @@ nav a:hover,
 .nav-links a:hover {
     color: #B18E54 !important;
 }
-/* Forzar los títulos de About, Features o subtítulos generales a color blanco */
-.about-title, 
-.features-title, 
-.section-title, 
-.about h3, 
-.features h3 {
+/* Poner en blanco los textos de los iconos (Fresh Ingredients, Quality, etc.) */
+.icon-box h3, 
+.icon-box p,
+.feature-item h3,
+.feature-item p,
+.ingredients-title,
+.icon-text {
     color: #ffffff !important;
 }
+
