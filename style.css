@@ -442,69 +442,71 @@ section.features-section .feature-item h4 {
 .hero {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('images/hero-bg.png') no-repeat center center/cover;
 }
-/* ==========================================
-   DIAGRAMACIÓN HERO PARA MÓVILES (Definitivo)
-   ========================================== */
+/* ======================================================
+   DIAGRAMACIÓN HERO PARA MÓVILES (Boceto Exacto)
+   ====================================================== */
 @media (max-width: 768px) {
     
-    /* 1. Fondo vertical con degradado claro (0.3 y 0.4) y distribución superior */
+    /* 1. Contenedor principal alineado arriba */
     .hero {
-        height: 100vh !important;
+        min-height: 100vh !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: space-between !important;
+        justify-content: flex-start !important; /* Alinea todo desde arriba hacia abajo */
         align-items: center !important;
-        padding: 75px 20px 40px 20px !important; 
+        padding: 85px 20px 30px 20px !important; /* Espacio superior para que el header no lo tape */
         box-sizing: border-box !important;
         background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('images/hero-bg-mobile.jpg') no-repeat center center/cover !important;
     }
 
-    /* 2. Subtítulo en dos líneas arriba */
+    /* 2. Subtítulo bien arriba */
     .hero-subtitle {
         display: block !important;
         text-align: center !important;
         line-height: 1.4 !important;
         letter-spacing: 2px !important;
-        margin-bottom: 0 !important;
+        margin-bottom: 5px !important;
         order: 1 !important;
     }
 
-    /* 3. Título Welcome en PNG más arriba */
+    /* 3. Título "Welcome to Haven" justo debajo del subtítulo (arriba del todo) */
     .hero-title-container {
-        margin: 2px 0 0 0 !important;
+        margin: 0 0 15px 0 !important;
         order: 2 !important;
     }
 
     .hero-title-img {
-        max-width: 250px !important;
+        max-width: 240px !important;
         width: 100% !important;
     }
 
-    /* 4. Texto "Choose your favorite experience" */
+    /* 4. EL TRUCO: Este margen automático empuja los botones y el texto inferior 
+       hacia abajo, dejando el espacio del medio limpio para la foto */
     .hero-cta-text {
         display: block !important;
         text-align: center !important;
-        font-size: 0.85rem !important;
+        font-size: 0.8rem !important;
         letter-spacing: 1.5px !important;
         color: #ffffff !important;
-        margin-bottom: 25px !important;
+        margin-top: auto !important; /* Empuja este bloque hacia la parte baja de la pantalla */
+        margin-bottom: 15px !important;
         order: 3 !important;
     }
 
-    /* 5. Botones abajo con ancho angosto y diseño original */
+    /* 5. Botones abajo del todo */
     .hero-buttons {
         width: 100% !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 12px !important;
+        gap: 10px !important;
         order: 4 !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 0 !important;
     }
 
     .hero-buttons .btn-concept {
-        width: 65% !important;
-        max-width: 240px !important;
+        width: 70% !important;
+        max-width: 250px !important;
         text-align: center !important;
         background-color: transparent !important;
         border: 2px solid #ffffff !important;
@@ -514,4 +516,3 @@ section.features-section .feature-item h4 {
         box-sizing: border-box !important;
     }
 }
-
