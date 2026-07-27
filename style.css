@@ -428,4 +428,11 @@ nav a:hover,
 .icon-text {
     color: #ffffff !important;
 }
-
+/* Solo los títulos de los bloques/iconos en blanco */
+.icon-box h3,
+.feature-item h3,
+.ingredients-title,
+.features h3,
+.about h3 {
+    color: #ffffff !important;
+}
