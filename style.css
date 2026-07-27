@@ -423,3 +423,7 @@ nav a:hover,
 section.features-section .feature-item h4 {
     color: #ffffff !important;
 }
+/* Devolver el color dorado únicamente a .find-us */
+.find-us {
+    color: #B18E54 !important;
+}
