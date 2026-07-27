@@ -419,3 +419,11 @@ nav a:hover,
 .nav-links a:hover {
     color: #B18E54 !important;
 }
+/* Forzar los títulos de About, Features o subtítulos generales a color blanco */
+.about-title, 
+.features-title, 
+.section-title, 
+.about h3, 
+.features h3 {
+    color: #ffffff !important;
+}
