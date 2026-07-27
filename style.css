@@ -419,11 +419,7 @@ nav a:hover,
 .nav-links a:hover {
     color: #B18E54 !important;
 }
-/* Solo los títulos de los bloques/iconos en blanco */
-.icon-box h3,
-.feature-item h3,
-.ingredients-title,
-.features h3,
-.about h3 {
+/* Poner en blanco los títulos h4 dentro de los items de features */
+.feature-item h4 {
     color: #ffffff !important;
 }
